@@ -13,12 +13,6 @@ jobs:
         with:
           node-version: "12.x"
           registry-url: "https://registry.npmjs.org"
-      - name: Install  dependencies
-        run: yarn
-      - name: Test  code
-        run: yarn test
-      - name: Generate  bundle
-        run: yarn build
       - name: Publish the package
         run: npm publish
         env:
