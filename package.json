@@ -1,0 +1,12 @@
+{
+  "name": "remove-unused-wx-plugin",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jaluik/removeUnusedWxPlugin.git",
+  "author": "jaluik <cqzhengmouren@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "release": "npm version patch",
+    "postversion": "git push --follow-tags"
+  }
+}
