@@ -5,7 +5,7 @@ webpack 插件，可以通过配置去除未使用的`wx.xxxx`方法
 ## usage
 
 ```js
-const RemoveUnusedWxPlugin = require("./removeUnusedWxPlugin");
+const RemoveUnusedWxPlugin = require("remove-wx-plugin");
 
 module.exports = {
   //  webpack ...config
