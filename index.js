@@ -22,7 +22,8 @@ class RemoveUnusedWxPlugin {
               }
               let result = data;
               this.opts.filterList.forEach((i) => {
-                result = result.replaceAll(`wx.${i}`, "undefined");
+                const reg = new RegExp(`wx.${i}`, "g");
+                result = result.replace(reg, "undefined");
               });
               if (result !== data) {
                 console.log("处理的文件：", fileName);
